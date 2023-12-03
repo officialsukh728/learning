@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "flutter learn",
       theme: ThemeData(
-        primaryColor: Colors.deepOrange,
+        primaryColor: Colors.purple,
       ),
       home: const Home(),
       debugShowCheckedModeBanner: false,

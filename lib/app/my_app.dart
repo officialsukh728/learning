@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/views/home.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -7,21 +8,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "flutter learn",
-      theme: ThemeData(),
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: Text("App Bar"),
-        ),
-        body: Container(
-          color: Colors.white,
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: (){},
-          child: const Icon(Icons.add),
-        ),
+      theme: ThemeData(
+        primaryColor: Colors.deepOrange,
       ),
+      home: const Home(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

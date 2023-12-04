@@ -61,16 +61,19 @@ void dispose() {
       child: Column(
         children: <Widget>[
           Calculatordisplay(
+            key: const Key("display one"),
               hint: "Enter first number ", controller: displayOneController),
           const SizedBox(
             height: 30,
           ),
           Calculatordisplay(
+            key: const Key("display two"),
               hint: "Enter second number ", controller: displayTwoController),
           const SizedBox(
             height: 30,
           ),
           Text(
+            key:Key("Result"),
             c.toString(),
             style: const TextStyle(
               fontSize: 60,
